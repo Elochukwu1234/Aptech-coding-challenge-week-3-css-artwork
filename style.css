@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F5D6B4;
+}
+.grid1{
+    margin: 50px auto;
+    height: 300px;
+    width: 300px;
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr;
+    position: relative;
+}
+.grid-item1-grid2{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+.bg-color{
+    background-color: #D86F45;
+}
+.square{
+    position: absolute;
+    z-index: 5;
+    top: 60px;
+    left: 60px;
+    height: 180px;
+    width: 180px;
+    background-color: #D86F45;
+}
+
+/* MOBILE VIEW */
+@media only screen and (min-width : 375px){
+    .grid1{
+        height: 360px;
+        width: 360px;
+    }
+    .square{
+        top: 72px;
+        left: 72px;
+        height: 216px;
+        width: 216px;
+    }
+}
+
+/* TABLET VIEW */
+@media only screen and (min-width : 768px){
+    .grid1{
+        height: 600px;
+        width: 600px;
+    }
+    .square{
+        top: 100px;
+        left: 100px;
+        height: 400px;
+        width: 400px;
+    }
+}
+
+/* DESKTOP VIEW */
+@media only screen and (min-width : 1280px){
+    .grid1{
+        height: 400px;
+        width: 400px;
+    }
+    .square{
+        top: 80px;
+        left: 80px;
+        height: 240px;
+        width: 240px;
+    }
+}
